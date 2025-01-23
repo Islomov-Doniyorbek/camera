@@ -1,0 +1,241 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.container header {
+    width: 100%;
+    height: 250px;
+    background: #000123;
+}
+header .top {
+    padding: 8px 15px;
+    position: relative;
+    border-bottom: 1px solid silver;
+}
+.top span {
+    margin-right: 10px;
+    font-weight: 800;
+    color: gray;
+}
+header .logo {
+    height: 150px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo .brand {
+    position: relative;
+    padding-top: 5px;
+    font-weight: 600;
+    color: azure;
+    left: 55px;
+}
+.logo .input {
+    width: 250px;
+    height: 40px;
+    background: rgba(240, 255, 255, 0.123);
+    position: relative;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.logo .input input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+}
+.logo .input input::placeholder {
+    font-style: italic;
+    font-size: 18px;
+}
+.logo .input i {
+    position: absolute;
+    color: gray;
+    right: 15px;
+}
+.container nav {
+    position: relative;
+    width: 100%;
+    height: 62px;
+    background: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav a {
+    font-weight: 700;
+    color: #000;
+    border-right: 1px solid #0000194b;
+    text-decoration: none;
+    padding-right: 15px;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+}
+section#about .wrapp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+.wrapp .col {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.col h3 {
+    font-size: 48px;
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+.col p {
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+
+}
+.col img {
+    width: 80%;
+    position: relative;
+}
+@media screen and (max-width: 764px){
+    .col:first-child {
+        display: none;
+    }
+}
+.holat {
+    position: relative;
+    width: 100%;
+}
+.holat h2 {
+    font-size: 28px;
+    border-top: 2px solid chocolate;
+}
+.holat .row {
+    background: chocolate;
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+}
+.row .title-row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.title-row h4 {
+    width: 80%;
+    font-size: 24px;
+    padding: 10px;
+}
+.title-row .icon {
+    width: calc(100% - 80%);
+    position: relative;
+    font-size: 18px;
+}
+.icon .fa-plus, .icon .fa-minus {
+    position: relative;
+    background: rgba(0, 0, 0, 0.473);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: chocolate;
+}
+.fa-minus {
+    display: none;
+}
+.row .hide {
+    position: relative;
+    width: 100%;
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    transition: 1.5s ease-in;
+}
+.row .hide table {
+    width: 100%;
+    background: #000123;
+    position: relative;
+    padding: 10px;
+    border-collapse: collapse;
+    color: chocolate;
+}
+.row .hide table td {
+    border: 2px solid blue;
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    background: #000123;
+}
+.footer .col .brand {
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    color: azure;
+}
+.footer .col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.footer .col span {
+    position: relative;
+    font-size: 18px;
+    color: gray;
+}
+.footer .col h3 {
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    color: azure;
+}
+.footer .col a {
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    color: gray;
+    padding-left: 15px;
+}
